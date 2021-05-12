@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+	<listener class-name="com.crm.vtiger.genericUtilities.ListImgClass"/>
+	</listeners>
+  <test  name="Test_runner_1">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.vtiger.TestcasesTests.TC_27_FillAllTheEntriesAndClickOnCancel_Test"/>
+      <class name="com.crm.vtiger.TestcasesTests.TC_29_FillAndSaveTheEntriesThenClickOnDelete_Test"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test_runner_2">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.vtiger.TestcasesTests.TC_30_SearchForOpportunityNameInDropDownList_Test"/>
+      <class name="com.crm.vtiger.TestcasesTests.TC_28_FillAndSaveTheEntriesThenClickOnEdit_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
